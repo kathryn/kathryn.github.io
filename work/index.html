@@ -16,39 +16,49 @@
     <div class="wrapper">
       <header>
         <a href="/"><h1>Kathryn<br> Aaker Salant</h1></a>
-        <p>Software Developer<br>
+        <p class="hide-print">Software Developer<br>
           <small>San Francisco</small><br>
           <a href="mailto:kathryn@kathrynaaker.com" target="_blank">email</a>
         </p>
+        <p class="display-print">
+          Software Developer - San Francisco<br>
+          kathryn@kathrynaaker.com / 415.948.5769
+        </p>
 
 
-        <h4>Me, elsewhere:</h4>
-        <ul class="links">
-          <li><a href="http://github.com/kathryn" target="_blank">@kathryn <small>github</small></a></li>
-          <li><a href="https://www.linkedin.com/in/kathrynaaker" target="_blank">@kathrynaaker <small>linkedin</small></a></li>
-          <!-- <li><a href="http://twitter.com/kathrynaaker" target="_blank">@kathrynaaker <small>i don't use twitter.</small></a></li> -->
-          <li><a href="http://instagram.com/kathrynaaker" target="_blank">@kathrynaaker <small>i hope you like pictures of kids and food. </small></a></li>
-        </ul>
+        <div class="resume-elsewhere">
+          <h4>Me, elsewhere:</h4>
+          <ul class="links">
+            <li><a href="http://github.com/kathryn" target="_blank">@kathryn <small>github</small></a></li>
+            <li><a href="https://www.linkedin.com/in/kathrynaaker" target="_blank">@kathrynaaker <small>linkedin</small></a></li>
+            <!-- <li><a href="http://twitter.com/kathrynaaker" target="_blank">@kathrynaaker <small>i don't use twitter.</small></a></li> -->
+            <li><a href="http://instagram.com/kathrynaaker" target="_blank">@kathrynaaker <small><span class="display-print-inline">instagram</span><span class="hide-print">i hope you like pictures of kids and food. </span></small></a></li>
+          </ul>
+        </div>
 
-        <h4>Some Current Relevant Skills:</h4>
-        <ul>
-          <li>Full-stack web development</li>
-          <li>JavaScript/CoffeeScript</li>
-          <li>Node</li>
-          <li>Angular</li>
-          <li>HTML5 & CSS3</li>
-          <li>Agile & TDD processes</li>
-        </ul>
+        <div class="resume-skills">
+          <h4>Some Current Relevant Skills:</h4>
+          <ul>
+            <li>Full-stack web development</li>
+            <li>JavaScript/CoffeeScript</li>
+            <li>Node</li>
+            <li>Angular</li>
+            <li>HTML5 & CSS3</li>
+            <li>Agile & TDD processes</li>
+          </ul>
+        </div>
 
-        <h4>Also into:</h4>
-        <ul>
-          <li>Communication & conflict resolution</li>
-          <li>Biomechanics</li>
-          <li>Crossfit</li>
-          <li>Nourishing food</li>
-          <li>The ukulele</li>
-          <li>The oxford comma, but I won't argue about it</li>
-        </ul>
+        <div class="resume-also">
+          <h4>Also into:</h4>
+          <ul>
+            <li>Communication & conflict resolution</li>
+            <li>Biomechanics</li>
+            <li>Crossfit</li>
+            <li>Nourishing food</li>
+            <li>The ukulele</li>
+            <li>The oxford comma, but I won't argue about it</li>
+          </ul>
+        </div>
 
       </header>
       <section>
@@ -60,10 +70,14 @@
 
         <p>I can bring value to a team by offering a wealth of experience and passion for creative ideas, communication, problem solving, and pushing the limits of technology while still developing for a positive user experience.</p>
 
-        <p>I'm currently into JavaScript/CoffeeScript, Node.js/Express, AngularJS, and equally happy in the front or back ends.</p>
+        <p>I'm currently into JavaScript/CoffeeScript, Node.js/Express, AngularJS, and equally happy working on the front or back end.</p>
 
-        <h2>Recently</h2>
-        <p>My most recent project is Newsbound's <a href="http://stacker.cc/features" target="_blank">Stacker</a> - a tool and platform for visual storytelling.  It is comprised of a content-creation tool for developing and publishing pieces, and a framework for the self-contained, CDN-backed pieces themselves.</p>
+        <h2 class="page-break">Recently</h2>
+
+        <h3><a href="http://stacker.cc" target="_blank">Stacker</a> (Newsbound)</h3>
+        <p class="display-print"> http://stacker.cc</p>
+
+        <p>My most recent project is Newsbound's Stacker - a tool and platform for visual storytelling.  It is comprised of a content-creation tool for developing and publishing pieces, and a framework for the self-contained, CDN-backed pieces themselves.</p>
 
         <p>I led development on the early prototypes and later the full implementation, which culminated in a rich single-page app featuring a real-time collaborative visual editor with both a WYSIWYG canvas and timeline interface.  It includes integration with Dropbox to enable designers to rapidly iterate, a clear but innovative animation system, and a CDN-backed publishing strategy to scale high traffic loads.</p>
 
@@ -82,6 +96,10 @@
         <p>
           <h3><a class="company" href="/posts/blog-introducing-eggs.html">Eggs (EggBasket)</a></h3>
           <i>Ruby Programmer</i><br>
+          <p class="display-print">
+            http://github.com/kathryn/eggs<br>
+            http://kathrynaaker.com/posts/blog-introducing-eggs.html<br>
+          </p>
           <a href="http://github.com/kathryn/eggs">Eggs (open source application for small meat farms)</a><br>
           I was inspired by leaders of the Slow Food movement to use Ruby on Rails to design and build a system for
           small meat farms to manage their CSA (Community Supported Agriculture) programs.  It is being used by a farm in the Bay Area, and helping to solve many of the unique issues that a non-vegetable CSA
@@ -90,13 +108,14 @@
         <ul>
           <li>Designed and wrote entire application from database to front end</li>
           <li>Free and open-source, released under the MIT license</li>
+          <li>A list should always have at least three items</li>
         </ul>
         <p>San Francisco, California | Spring, 2009 - present</p>
 
-        <h2>Flash and OpenLaszlo programming</h2>
-        <p>For over 10 years I worked for companies of all sizes to build rich internet applications in Flash and OpenLaszlo before such things were done in HTML.  I developed an extensive understanding about not only implementation, but also the user experience considerations in these early "single page apps".
+        <h2 class="page-break">Flash and OpenLaszlo programming</h2>
+        <p>For over 10 years I worked for companies of all sizes to build rich internet applications in Flash and OpenLaszlo before such things were done in HTML.  I developed an extensive understanding about not only implementation, but also the user experience considerations in these early "single page apps".</p>
 
-        <h4>Clients included:</p></h4>
+        <h5>Clients included:</h5>
         <ul>
           <li>CafePress</li>
           <li>Noggin Labs</li>
@@ -112,7 +131,7 @@
           <li>Macromedia (now Adobe)</li>
         </ul>
 
-        <p>See an <a href="extended.html">extended list</a> if you so desire.</p>
+        <p>See an <a href="extended.html">extended project details list</a> if you so desire.<span class="display-print-inline"><br>http://kathrynaaker.com/work/extended.html</p>
 
         <h2>Education</h2>
         <p>
@@ -133,13 +152,12 @@
 
         <p>
           <strong>Artist's Certificate</strong><br>
-          London College<br>
-          of Music and Media<br>
+          London College of Music and Media<br>
           <small>September 1997 - June 1998</small>
         </p>
 
 
-        <footer>
+        <footer class="hide-print">
           <p class="footer"><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
         </footer>
       </section>
