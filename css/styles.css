@@ -127,10 +127,6 @@ header .links {
   padding-left : 0;
 }
 
-header .links li {
-  margin-bottom : 4px;
-}
-
 header ul a:hover {
   color : #999;
 }
@@ -176,6 +172,10 @@ footer {
   display: none;
 }
 
+.clients-list {
+  margin-bottom: 0;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
@@ -194,7 +194,7 @@ footer {
   }
 
   section {
-    border       : 1px solid #e5e5e5;
+    border-top       : 1px solid #e5e5e5;
     border-width : 1px 0;
     padding      : 20px 0;
     margin       : 0 0 20px;
@@ -250,14 +250,28 @@ footer {
     font-size : 14pt;
   }
 
-  .resume-skills {
+  .horiz-separator {
+    margin-left: 97px;
+  }
+
+  .resume-skills, .clients-list {
     float : left;
     width : 310px;
+  }
+
+  .resume-also h4 {
+    position: relative;
+    left: -20px;
+  }
+
+  .project-link {
+    margin-top: -16px;
   }
 
   .display-print {
     display : block;
   }
+
   .display-print-inline {
     display : inline;
   }
@@ -265,6 +279,7 @@ footer {
   .hide-print {
     display : none;
   }
+
   .page-break {
     page-break-before : always;
   }
